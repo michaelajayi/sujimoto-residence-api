@@ -2,14 +2,14 @@
   "development": {
     "username": "root",
     "password": "",
-    "database": "suji_properties",
+    "database": "sujimoto_residence",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
     "password": "",
-    "database": "suji_properties",
+    "database": "sujimoto_residence",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }

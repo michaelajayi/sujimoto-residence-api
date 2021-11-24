@@ -9,10 +9,10 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate({ Amenity }) {
       // define association here
-      this.belongsToMany(Amenity, {
-        through: "properties_amenities",
-        foreignKey: "amenityId",
-      });
+      // this.belongsToMany(Amenity, {
+      //   through: "properties_amenities",
+      //   foreignKey: "amenityId",
+      // });
     }
   }
   Property.init(
@@ -38,11 +38,6 @@ module.exports = (sequelize, DataTypes) => {
       },
       location: {
         type: DataTypes.STRING,
-      },
-      amenityId: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV1,
-        foreignKey: true,
       },
     },
     {

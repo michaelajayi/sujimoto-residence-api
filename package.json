@@ -27,5 +27,8 @@
     "nodemon": "^2.0.15",
     "sequelize": "^6.11.0",
     "sequelize-cli": "^6.3.0"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }

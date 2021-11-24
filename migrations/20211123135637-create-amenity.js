@@ -17,11 +17,6 @@ module.exports = {
         defaultValue: "free",
         allowNull: false,
       },
-      propertyId: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV1,
-        foreignKey: true,
-      },
       createdAt: {
         allowNull: false,
         type: DataTypes.DATE,

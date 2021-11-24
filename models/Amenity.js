@@ -9,10 +9,6 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate({ Property }) {
       // define association here
-      this.belongsToMany(Property, {
-        through: "property_amenities",
-        foreignKey: "propertyId",
-      });
     }
   }
   Amenity.init(
@@ -31,11 +27,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.ENUM("free", "paid"),
         defaultValue: "free",
         allowNull: false,
-      },
-      propertyId: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV1,
-        foreignKey: true,
       },
     },
     {

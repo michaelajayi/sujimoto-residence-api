@@ -24,11 +24,6 @@ module.exports = {
       location: {
         type: DataTypes.STRING,
       },
-      amenityId: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV1,
-        foreignKey: true,
-      },
       createdAt: {
         allowNull: false,
         type: DataTypes.DATE,
